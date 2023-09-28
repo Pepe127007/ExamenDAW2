@@ -1,0 +1,21 @@
+package org.cibertec.edu.pe.Model;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+
+
+@Entity
+@Table(name="Tiendavirtual")
+public class TiendaVirtual {
+	@Id
+	private String Item;
+	private String Articulo;
+	private String Descripcion;
+	private int Precio;
+	private int Cantidad;
+	private int Total;
+	private int Acciones;
+	
+	public TiendaVirtual() {
+	}
+}

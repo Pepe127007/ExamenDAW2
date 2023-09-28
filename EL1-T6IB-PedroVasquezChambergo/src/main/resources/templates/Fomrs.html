@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>CRUD SPRING</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container mt-4">
+			<div class="col-sem-6">
+				<form th:action="@{/salvar}" th:object="${colaborador}" method="post">
+					<div class="card">
+						<div class="card-header">
+							<h3>Modulo Colaborador</h3>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label>Item</label>
+								<input type="text" th:field="*{Item}" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Articulo</label>
+								<input type="text" th:field="*{Articulo}" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Descripcion</label>
+								<input type="text" th:field="*{Descripcion}" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Precio</label>
+								<input type="text" th:field="*{Precio}" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Cantidad</label>
+								<input type="text" th:field="*{Cantidad}" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Total</label>
+								<input type="text" th:field="*{Total}" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Acciones</label>
+								<input type="text" th:field="*{Acciones}" class="form-control" />
+							</div>
+						</div>
+						<div class="card-footer">
+							<input type="submit" value="Guardar" class="btn btn-success" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</body>
+</html>

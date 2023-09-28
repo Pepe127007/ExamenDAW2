@@ -1,0 +1,35 @@
+package org.cibertec.edu.pe.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.cibertec.edu.pe.InterfaceService.ITiendaVirtualService;
+import org.cibertec.edu.pe.Model.TiendaVirtual;
+
+public class TiendaVirtualService implements ITiendaVirtualService {
+
+	@Override
+	public List<TiendaVirtual> Listar() {
+		return (List<TiendaVirtual>)data.findAll();
+		
+	}
+
+	@Override
+	public Optional<TiendaVirtual> Buscar(String Id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public int Grabar(TiendaVirtual ObjC) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void Suprimir(String Id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
